@@ -1,4 +1,17 @@
-.welcome-section{
+.welcome-section {
     display: flex;
     justify-content: space-between;
+}
+
+.title-highlight {
+    color: blue;
+}
+
+.started-btn {
+    color: white;
+    background-color: rgb(42, 42, 240);
+    height: 30px;
+    border-radius: 10px;
+    width: 80px;
+    border-style: none;
 }

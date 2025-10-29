@@ -8,7 +8,7 @@ const WelcomeSection = () => (
     <h1 className="title">
       Manage your <span className="title-highlight">Deals</span>
     </h1>
-    <button className="btn-primary">Get Started</button>
+    <button className="started-btn">Get Started</button>
     </div>
     <div>
         <img src="./client-cover.png" style={{height:"250px"}}></img>
