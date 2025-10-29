@@ -1,0 +1,417 @@
+/* index.css - paste this into src/index.css */
+
+/* reset / box sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background: white;
+    height: 64px;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.logo-top {
+    font-size: 0.85rem;
+    color: #333;
+}
+
+.logo-bottom {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #5C6BC0;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    background: #f0f0f0;
+    border-radius: 25px;
+    padding: 4px;
+    gap: 4px;
+}
+
+.nav-item {
+    padding: 6px 16px;
+    border-radius: 25px;
+    font-size: 0.875rem;
+    cursor: pointer;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: all 0.2s;
+}
+
+.nav-item.active {
+    background: #2442edff;
+    color: white;
+}
+
+.nav-item:not(.active) {
+    color: #666;
+}
+
+.user-section {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #d32f2f;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* Main Content */
+.main-content {
+    background: linear-gradient(to bottom, #eff2fb, #ffffff);
+    min-height: calc(100vh - 64px);
+    padding: 2rem 4rem;
+}
+
+.welcome-section {
+    margin-bottom: 2rem;
+}
+
+.welcome-text {
+    color: #999;
+    font-size: 0.85rem;
+    margin-bottom: 4px;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.title-highlight {
+    color: #5C6BC0;
+}
+
+.btn-primary {
+    background: #5C6BC0;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.875rem;
+}
+
+.btn-primary:hover {
+    background: #4a5aa8;
+}
+
+/* Dashboard Card */
+.dashboard-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.tabs-row {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 1rem 1.5rem 0;
+}
+
+.tab-button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 0.875rem;
+    border-bottom: 2px solid transparent;
+    color: #999;
+}
+
+.tab-button.active {
+    color: #5C6BC0;
+    font-weight: bold;
+    border-bottom-color: #5C6BC0;
+}
+
+.clear-btn {
+    margin-left: auto;
+    color: #d32f2f;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 0.875rem;
+}
+
+/* Filter Bar */
+.filter-bar {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+}
+
+.filter-left {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.view-tabs {
+    display: flex;
+    gap: 1rem;
+}
+
+.view-tab {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #666;
+}
+
+.view-tab.active {
+    color: #5C6BC0;
+    font-weight: bold;
+}
+
+.summary-text {
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.highlight {
+    color: #5C6BC0;
+}
+
+.filter-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search-input {
+    width: 150px;
+    padding: 6px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.875rem;
+}
+
+.date-input {
+    width: 130px;
+    padding: 6px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.875rem;
+}
+
+.date-label {
+    font-size: 0.75rem;
+    color: #999;
+}
+
+.active-deals-btn {
+    color: #5C6BC0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.875rem;
+}
+
+/* Table */
+.table-container {
+    padding: 1rem;
+}
+
+.table-header {
+    display: grid;
+    grid-template-columns: 5fr 3fr 2fr 1fr 1fr;
+    padding: 1rem 1.5rem;
+    color: #999;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.table-header div:nth-child(4) {
+    text-align: center;
+}
+
+/* Status Group */
+.status-group {
+    margin: 1.5rem 0;
+}
+
+.status-header {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    border-bottom: 1px solid #e0e0e0;
+    gap: 1rem;
+}
+
+.status-header:hover {
+    opacity: 0.9;
+}
+
+.status-name {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.status-count, .status-revenue {
+    font-size: 0.8rem;
+    color: #666;
+    font-weight: 500;
+}
+
+.arrow {
+    margin-left: auto;
+    color: #999;
+}
+
+.deals-container {
+    padding: 0 1.5rem;
+}
+
+.deals-container.collapsed {
+    display: none;
+}
+
+/* Deal Row */
+.deal-row {
+    display: grid;
+    grid-template-columns: 5fr 3fr 2fr 1fr 1fr;
+    padding: 1rem 0;
+    border-bottom: 1px solid #f0f0f0;
+    border-left: 3px solid;
+    padding-left: 1rem;
+    align-items: center;
+}
+
+.deal-row:hover {
+    background: #fafafa;
+}
+
+.deal-row.negotiating {
+    border-left-color: #E0B0FF;
+}
+
+.deal-row.kickback {
+    border-left-color: #FFD580;
+}
+
+.client-cell {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.client-avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #FF7043;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.client-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.client-name {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.client-assignee {
+    font-size: 0.75rem;
+    color: #999;
+}
+
+.deal-name, .deal-budget {
+    font-size: 0.875rem;
+    color: #333;
+}
+
+.assignee-cell {
+    display: flex;
+    justify-content: center;
+}
+
+.assignee-avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #7986CB;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.action-cell {
+    text-align: center;
+}
+
+.action-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #aaa;
+    font-size: 1rem;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 2rem;
+    color: #999;
+    font-size: 0.8rem;
+}

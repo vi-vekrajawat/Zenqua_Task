@@ -1,0 +1,56 @@
+.custom-hash {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+.custom-hash::before,
+.custom-hash::after {
+    content: "";
+    position: absolute;
+    background-color: blue;
+    width: 3px;
+    height: 100%;
+    top: 0;
+    border-radius: 2px;
+}
+
+.custom-hash::before {
+    left: 6px;
+}
+
+.custom-hash::after {
+    right: 6px;
+}
+
+.custom-hash div {
+    position: absolute;
+    background-color: black;
+    height: 3px;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.custom-hash div:first-child {
+    top: 6px;
+}
+
+.custom-hash div:last-child {
+    bottom: 6px;
+}
+
+.logo-top {
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: #007bff;
+    line-height: 1;
+}
+
+.logo-bottom {
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 16px;
+    color: #222;
+    line-height: 1;
+}
