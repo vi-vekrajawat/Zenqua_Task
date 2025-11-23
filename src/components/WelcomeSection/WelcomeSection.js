@@ -11,7 +11,7 @@ const WelcomeSection = () => (
     <button className="started-btn">Get Started</button>
     </div>
     <div>
-        <img src="./client-cover.png" style={{height:"250px"}}></img>
+        <img src="./client-cover.png" style={{height:"250px"}} alt="image"></img>
     </div>
   </div>
 );
